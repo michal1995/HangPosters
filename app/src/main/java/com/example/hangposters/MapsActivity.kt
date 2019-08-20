@@ -78,7 +78,8 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback, OnMarkerClickListe
                             .position(LatLng(lastLocation.latitude, lastLocation.longitude))
                             .title("Hello world")
                     )
-                    Toast.makeText(this@MapsActivity,lastLocation.longitude.toString(),Toast.LENGTH_LONG).show()
+                        AddPositions().execute("asd")
+                        Toast.makeText(this@MapsActivity,lastLocation.longitude.toString(),Toast.LENGTH_LONG).show()
 
                 }
 
