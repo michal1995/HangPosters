@@ -5,9 +5,17 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_subtitle">https://jagiellonska.org/</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="donate_text">Fundacja Jagiellońska działa dzięki hojności Darczyńców.
+        Jeżeli chcą Państwo razem z nami tworzyć
+        organizację pracującą na rzecz lokalnej społeczności oraz
+        przyczyniającą się do rozwoju młodych ludzi, prosimy o wsparcie.
+        Każda, nawet symboliczna pomoc jest dla nas ważna.
+    </string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

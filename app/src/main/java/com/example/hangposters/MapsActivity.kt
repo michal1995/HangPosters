@@ -8,7 +8,6 @@ import android.location.Location
 import android.os.Build
 import android.os.Bundle
 import android.view.MenuItem
-import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
@@ -22,6 +21,7 @@ import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.Marker
 import com.google.android.gms.maps.model.MarkerOptions
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.navigation.NavigationView
 
 
@@ -47,6 +47,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback, OnMarkerClickListe
         private const val LOCATION_PERMISSION_REQUEST_CODE = 1
         // 3
         private const val REQUEST_CHECK_SETTINGS = 2
+
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -55,7 +56,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback, OnMarkerClickListe
         setContentView(R.layout.activity_maps)
 
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
-        val mapFragment = supportFragmentManager.findFragmentById(R.id.map) as SupportMapFragment
+        val mapFragment = supportFragmentManager.findFragmentById(R.id.mapp) as SupportMapFragment
         //val appBarConfiguration = AppBarConfiguration(navController.graph, drawerLayout)
 
 
@@ -71,7 +72,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback, OnMarkerClickListe
                 super.onLocationResult(p0)
 
                 lastLocation = p0.lastLocation
-                var fab = findViewById<Button>(R.id.fab)
+                var fab = findViewById<FloatingActionButton>(R.id.faber)
                 fab.setOnClickListener {
                     map.addMarker(
                         MarkerOptions()
